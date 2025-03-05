@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>video & audio</title>
+    </head>
+    <body>
+        <!-- video : 동영상 재생에 사용하는 태그 -->
+        <video 
+        src="./src/rabbit.MOV" 
+        width = "300" 
+        controls
+        poster = "./src/rosy-icon.png"
+        ></video>
+        
+        <!-- 속성 poster : 브라우저, 인터넷 문제 등으로 동영상 재생 할 수 없을 경우 해당 이미지 표시됨 -->
+
+        <!-- source : 브라우저가 지원하는 형식을 선택하여 재생할 수 있도록 함 -->
+         <video>
+            <source src="./src/rabbit.MOV" type="video/mov" />
+            <!-- type 지정 안해주면? 브라우저가 재생 가능한 파일인지 확인하는 과정을 거쳐야함으로 트래픽이 낭비된다. -->
+        </video>
+
+        <!-- audio : 웹 페이지에 오디오 컨텐츠를 포함할 때 사용하는 태그 -->
+        <audio src="./src/CatPurr.mp3" controls></audio>
+        <audio>
+            <source src="./src/CatPurr.mp3" type="audio/mpeg" /> 
+        </audio>
+    </body>
+</html>
