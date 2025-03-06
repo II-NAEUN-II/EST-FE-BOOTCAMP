@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form 태그 실습</title>
+    </head>
+    <body>
+        <!-- 어디에, 어떻게 전송할지 form이 정해줌. -->
+        <form action="" method="get">
+            <!-- 아이디 입력창 생성 -->
+            <label for="id">아이디 :</label> 
+            <input type="text" id="id" name="id" autocomplete="off" required /> 
+            <br />
+
+            <!-- 닉네임 입력창 생성 -->
+            <label for="username">닉네임 :</label> 
+            <input type="text" id="username" name="username" disabled /> 
+            <br />
+
+            <!-- 비밀번호 입력창 생성 -->
+            <label for="password">비밀번호 :</label> 
+            <input type="password" id="password" name="password" placeholder = "대소문자가 포함된 비밀번호를 입력하세요" required/> 
+            <br />
+
+            <input type="submit" /> <!-- 제출버튼 생성 -->
+        </form>
+    </body>
+</html>

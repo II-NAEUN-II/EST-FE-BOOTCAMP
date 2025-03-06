@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>picture 태그</title>
+    </head>
+    <body>
+        <!-- picture tag 예시 -->
+        <picture>
+            <source srcset="./src/Licat.png" media="(max-width:600px)" />
+            <source srcset="./src/Zeezee.png" media="(max-width:1200px)" />
+            <img src="./src/rosy-icon.png" alt="로지">
+        </picture>
+
+        <!-- output tag 예시 -->
+        <h1>숫자 더하기</h1>
+        <form oninput="result.value=parseInt(a.value) + parseInt(b.value)">
+            <label for="a">숫자 1</label>
+            <input type="number" id="a" name="a" value="0" />
+            <br /><br />
+            <label for="b">숫자 2</label>
+            <input type="number" id="b" name="b" value="0" />
+            <br /><br />
+            <label for="result">합계</label>
+            <output id="result">0</output>
+            <!-- 스크린 리더는 output 태크를 출력으로 인식함. -->
+        </form>
+    </body>
+</html>
