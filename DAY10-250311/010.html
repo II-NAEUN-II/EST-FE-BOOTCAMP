@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>가상 요소</title>
+
+        <style>
+            p::before {
+                content: "프론트엔드 개발자 양성과정 5기 여러분";
+                color: orange
+            }
+
+            p::after {
+                content: "잘 부탁드립니다!";
+            }
+
+            /* 아래 요소들에는 가상요소 적용 불가 */
+            img::before {
+                content: "이미지 앞에 텍스트 추가";
+            }
+
+            br::before {
+                content: "줄바꿈";
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+                color: red;
+                opacity: 0.4;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <strong>안녕하세요!</strong>
+        </p>
+
+        <img style"width: 200px" src="https://img.freepik.com/free-vector/illustration-south-korea-flag_53876-27132.jpg" alt="">
+
+        <input type="text" placeholder="이름을 입력하세요" />
+        <textarea name="" id="" placeholder="자기소개를 작성해주세요."></textarea>
+    </body>
+</html>

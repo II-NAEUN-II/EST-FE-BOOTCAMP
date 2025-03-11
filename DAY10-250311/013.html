@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>is, where  선택자</title>
+
+        <style>
+            :is(h1, h2, h3) a {
+            color: blue;
+            }
+
+            :where(h1, h2, h3) a {
+            color: red;
+            }
+
+            div:has(a){
+                background-color: lightgray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1><a>hello</a></h1>
+        <h2><a>hello</a></h2>
+        <h3><a>hello</a></h3>
+        <h4><a>hello</a></h4>
+
+        <div>
+            <p>lorem ipsum</p>
+        </div>
+
+        <div>
+            <a href="#">click me</a>
+        </div>
+    </body>
+</html>
