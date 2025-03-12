@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>텍스트 정렬</title>
+
+        <style>
+            p {
+                width: 300px;
+                height: 100px;
+                overflow: hidden;
+                background-color: antiquewhite;
+
+                /* 텍스트의 가로 정렬 */
+                /* 기본 값은 left 왼쪽정렬 */
+                text-align: right;      /* 오른쪽 정렬 */
+                text-align: center;     /* 가운데 정렬 */
+                text-align: justify;        /* 양쪽 정렬 (마지막 줄 제외), 권장 안함 */
+
+                /* 텍스트의 시작 부분 여백 설정 */
+                text-indent: 30px;   
+                /* text-indent: -30px;  */
+
+                /* 줄바꿈 동작 제어, 기본 값은 nomal */
+                word-break: break-all;
+                word-break: keep-all;
+
+                /* 텍스트 말줄임표 */
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            /* .multi-ellipsis {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                블록 컨텐츠의 라인 수를 제한하는 속성입니다
+                -webkit-line-clamp: 3; 
+            } */
+
+        </style>
+    </head>
+    <body>
+        <p class=".multi-ellipsis">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempora sed debitis quae, eveniet fugiat voluptatibus deserunt, eum aliquam harum reiciendis minus mollitia odit nam soluta libero laborum ipsa iste? 이것은 매우 긴 한글 단어가 있는 텍스트입니다. 줄바꿈이 어떻게 처리되는지 확인하기 위한 텍스트입니다.
+        </p>
+    </body>
+</html>

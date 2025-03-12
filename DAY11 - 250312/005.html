@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>텍스트 꾸미기 - 글꼴 크기 조정, 텍스트 장식, 정렬</title>
+
+        <style>
+            p {
+                /* 폰트 크기 지정 */
+                /* 절대 단위 */
+                font-size: 16px;
+                /* 상대 단위 */
+                font-size: 2rem;
+                font-size: 2em;
+
+                /* 폰트의 굵기 지정 */
+                font-weight:  bold;
+                font-weight:  900;
+
+                /* 기본값은 none */
+                /* 모든 문자를 대문자로 */
+                text-transform: uppercase;
+                /* 모든 문자를 소문자로 */
+                text-transform: lowercase;
+                /* 단어의 첫 문자를 대문자로 */
+                text-transform: capitalize;
+            }
+
+            span {
+                /* 폰트 사이즈 키워드 */
+                /* 절대 크기 키워드 */
+                font-size: xx-small;
+                /* 상태 크기 (부모 요소 기준) */
+                font-size: smaller;
+                font-size: larger;
+
+                /* text-decoration-color: blue;
+                text-decoration-line: overline underline;
+                text-decoration-style: dotted;
+                text-decoration-thickness: 5px; */
+                /* 위 아래가 같은 스타일 */
+                text-decoration: blue overline underline dotted 5px;
+
+                /* 그림자 : 가로거리, 세로거리, 번짐정도, 색상 */
+                text-shadow: 10px 10px 5px gray, -10px -10px 5px gray;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum, modi minus quam quidem error quaerat delectus dolore, laudantium dolorem suscipit aliquam id laboriosam, nisi natus deserunt necessitatibus voluptas ipsum.
+            <span>lorem</span>
+        </p>
+    </body>
+</html>

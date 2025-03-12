@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>단위1</title>
+
+        <style>
+            .px {
+                width: 500px;
+                background-color: aliceblue;
+            }
+
+            .percent div{
+                width: 50%;
+                background-color: yellow;
+            }
+
+            .vw {
+                width: 50vw;
+                background-color: lightcoral;
+            }
+
+            .vh {
+                width: 50vh;
+                background-color: lightgreen;
+            }
+
+            .vmin {
+                width: 50vmin;
+                background-color: lightblue;
+            }
+
+            .vmax {
+                width: 50vmax;
+                background-color: lightgoldenrodyellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 절대 단위 이미지를 표현하는 가장 작은 단위 -->
+        <div class="px">
+            <strong>div width: 500px;</strong>
+            <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, laboriosam! Tempora architecto amet distinctio omnis accusamus cupiditate ipsum repudiandae sunt quos. Libero nostrum, nihil earum sequi cupiditate exercitationem officia totam.
+        </div>
+        <br />
+
+        <!-- 부모 요소의 해당 속성 값 기준 -->
+        <div class="percent">
+            <strong>div width: 500px;</strong>
+            <br />
+            <div>
+                <strong>div width: 50%;</strong>
+                <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, laboriosam! Tempora architecto amet distinctio omnis accusamus cupiditate ipsum repudiandae sunt quos. Libero nostrum, nihil earum sequi cupiditate exercitationem officia totam.
+            </div>
+        </div>
+        <br />
+
+        <!-- 뷰포트 너비 기준, 100vw = 뷰포트 너비 -->
+        <div class="vw">
+            <strong>div width: 50vw;</strong>
+            <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, laboriosam! Tempora architecto amet distinctio omnis accusamus cupiditate ipsum repudiandae sunt quos. Libero nostrum, nihil earum sequi cupiditate exercitationem officia totam.
+        </div>
+        <br />
+
+        <!-- 뷰포트 높이 기준, 100vh = 뷰포트 shvdl -->
+        <div class="vh">
+            <strong>div width: 50vh;</strong>
+            <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, laboriosam! Tempora architecto amet distinctio omnis accusamus cupiditate ipsum repudiandae sunt quos. Libero nostrum, nihil earum sequi cupiditate exercitationem officia totam.
+        </div>
+        <br />
+
+        <!-- 뷰포트 너비와 높이 중 작은 값 기준 -->
+        <div class="vmin">
+            <strong>div width: 50vmin;</strong>
+            <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, laboriosam! Tempora architecto amet distinctio omnis accusamus cupiditate ipsum repudiandae sunt quos. Libero nostrum, nihil earum sequi cupiditate exercitationem officia totam.
+        </div>
+        <br />
+
+        <!-- 뷰포트 너비와 높이 중 큰 값 기준 -->
+        <div class="vmax">
+            <strong>div width: 50vmax;</strong>
+            <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, laboriosam! Tempora architecto amet distinctio omnis accusamus cupiditate ipsum repudiandae sunt quos. Libero nostrum, nihil earum sequi cupiditate exercitationem officia totam.
+        </div>
+    </body>
+</html>
