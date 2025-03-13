@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>border-radius 실습</title>
+
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: lightpink;
+                margin-bottom : 10px;
+            }
+
+            .A {
+                border-radius: 50px;
+            }
+
+            .B {
+                border-radius: 10px;
+            }
+
+            .C {
+                border-radius: 100% 0 0 0;
+                /* border-radius: 100px 0px 0px 0px; */
+            }
+
+            .D {
+                border-radius: 100% 0;
+                /* border-radius: 100px 0px 100px 0px; */
+            }
+
+            .E {
+                border-radius: 0 50%;
+                /* border-radius: 0px 50px 0px 50px; */
+            }
+
+            .F {
+                height: 50px;
+                border-radius: 50px 50px 0 0;
+                /* border-radius: 100px 100px 0px 0px; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="A"></div>
+        <div class="B"></div>
+        <div class="C"></div>
+        <div class="D"></div>
+        <div class="E"></div>
+        <div class="F"></div>
+    </body>
+</html>

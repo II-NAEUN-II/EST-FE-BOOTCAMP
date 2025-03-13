@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>박스 만들기 실습</title>
+
+        <style>
+            div {
+                padding: 10px 20px;
+                display: inline-block;
+                /* width: 200px;
+                height: 100px; */
+                margin-bottom: 10px;
+                text-align: center;
+
+
+            }
+
+            .A {
+                background-color: rgb(147, 163, 179);
+                /* border: solid 5px black;
+                box-shadow: inset 5px 5px rgb(98, 112, 126); */
+                
+                border-top: solid 5px rgb(98, 112, 126);
+                border-left: solid 5px rgb(98, 112, 126);
+                outline: solid 5px black ;
+                
+                color: white;
+            }
+
+            .B {
+                background: linear-gradient(90deg, #834df6 0%, #336df2 100%);
+                color: white;
+
+                border-radius: 50px;
+                border: 5px dashed lavender;
+                background-clip: padding-box;
+            }
+
+            .C {
+                border: 2px solid lightsteelblue;
+                border-radius: 0px 50px 50px 50px;
+                box-shadow: 5px 5px 5px 0 #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="A">hello🦊</div>
+        <div class="B">hello🦊</div>
+        <div class="C">hello🦊</div>
+    </body>
+</html>
