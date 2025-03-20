@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>시계 애니메이션 실습</title>
+
+        <style>
+            @keyframes move-watch {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .clock {
+                width: 400px;
+                height: 400px;
+                border: solid 20px lightskyblue;
+                background-color: azure;
+                border-radius: 60%;
+
+                position: relative;
+            }
+
+            .clock div {
+                width: 10px;
+                height: 150px;
+                background-color: black;
+
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                animation-name: move-watch;
+                transform-origin: center bottom;
+                animation-iteration-count: infinite;
+                animation-timing-function: steps(60);
+            }
+
+            .clock .sec {
+                background-color: red;
+                animation-duration: 1s;
+
+                border-radius: 5px;
+            }
+
+            .clock .min {
+                background-color: green;
+                animation-duration: 60s;
+                height: 120px;
+                top: 80px;
+
+                border-radius: 5px;
+            }
+
+            .clock .hour {
+                background-color: black;
+                animation-duration: 200s;
+                height: 90px;
+                top: 110px;
+
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="clock">
+            <div class="hour"></div>
+            <div class="min"></div>
+            <div class="sec"></div>
+        </div>
+    </body>
+</html>
